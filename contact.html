@@ -9,53 +9,87 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/logoSistemas.ico">
+    <link rel="stylesheet" href="styles/estilopersonal.css">
 </head>
 
 <body>
-    <nav>
-        <a href="/" style="text-decoration:none">
+    <header id="headerabout">
+
+        <a href="/">
             <h1>Mi sitio web</h1>
         </a>
-        <a href="index.html"> inicio</a> &nbsp
-        <a href="about.html">Acerca de</a> &nbsp
-    </nav>
-
-    <nav>
-        <h1>Contacto</h1>
-        <form>
-            Direccion: <input type="text" name="direccion" value="Tartar Chico-Baños del Inca" /> <br/> E-mail
-            <input type="text" name="correo" value="mcuzcor15_2@unc.edu.pe" /> <br/> Celular
-            <input type="tel" name="celular" value="940371162" /> <br/>
-        </form>
-    </nav>
-
-    <nav>
-        <h1>Deja un mensaje</h1>
-        <form>
-            Nombres: <input type="text" name="nombre" value="" /> <br/> E-mail
-            <input type="text" name="correo" value="" /> <br/> mensaje
-            <input type="text" name="mensaje" value="" /> <br/>
-            <input type="button" value="enviar" />
-        </form>
-    </nav>
-
+        <nav>
+            <ul>
+                <li><a href="index.html"> Inicio</a> &nbsp</li>
+                <li><a href="about.html"> Acerca de</a> &nbsp</li>
+                <li><a href="contact.html">Cantáctame</a> &nbsp</li>
+            </ul>
+        </nav>
+        <section>
+            <p><a href="index.html">Inicio</a>/ &nbsp Contáctame</p>
+            <br/>
+        </section>
+        <br/>
+        <hr/>
+    </header>
     <section>
+        <article id="ar">
+            <h1>Contacto</h1>
+            <form>
+                <div>
+                    <label for="direccion">Tartar chico-Baños del Inca</label>
+                </div>
+                <div>
+                    <label for="email">mcuzcor15_2@unc.edu.pe</label>
+                </div>
+                <div>
+                    <label for="celular">940371162</label>
+                </div>
+            </form>
+        </article>
+
+        <article>
+            <h3>Envíanos tus sugerencias por e‐mail</h3>
+            <form action="MAILTO:mipaginaweb@unc.edu.com" method="post" enctype="text/plain">
+                <div id="sug">
+                    <div class="esc">
+                        <input type="text" id="fname" name="firstname" placeholder="Nombres..">
+                    </div>
+                </div>
+                <div id="sug">
+                    <div class="esc">
+                        <input type="text" id="lname" name="lastname" placeholder="Apellidos..">
+                    </div>
+                </div>
+                <div id="sug">
+                    <div class="esc">
+                        <textarea id="subject" name="subject" placeholder="Escriba sugerencia.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div id="boton">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </article>
+    </section>
+    <footer id="adr">
         <div>
             <a href="https://web.facebook.com/cuzco.ramos">
-                <img src="images/iconface.png" alt="facebook" title="Cuzco Ramos" width="4%" height="4%" />
-            </a>
-            <a href="https://www.instagram.com/cuzco_ramos/?hl=es-la" target="_blanck">
-                <img src="images/iconinst.png" alt="instagram" title="Cuzco Ramos" width="4%" height="4%" />
+                <img src="images/iconface.png" alt="facebook" title="Cuzco Ramos" />
             </a>
         </div>
         <div>
+            <a href="https://www.instagram.com/cuzco_ramos/?hl=es-la" target="_blanck">
+                <img src="images/iconinst.png" alt="instagram" title="Cuzco Ramos" />
+            </a>
+        </div>
+        <div id="ad">
             <address> Autor Cuzco Ramos Manuel (UNC) <br/>
-                Ultima modificacion: 3 de septiembre del 2020
+                <hr/><p>Ultima modificacion: 12 de septiembre del 2020</p>
             </address>
         </div>
-    </section>
-
-
+    </footer>
 </body>
 
 </html>
