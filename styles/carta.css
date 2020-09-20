@@ -1,0 +1,36 @@
+* {}
+
+body {
+    margin-left: 23%;
+    margin-right: 24%;
+}
+
+#sp {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+span {
+    text-decoration: underline;
+    color: blue;
+}
+
+.eslin {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: darkgray;
+    color: black;
+}
+
+#info {
+    text-align: right;
+}
+
+blockquote {
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+div p {
+    margin-bottom: 0%;
+}
