@@ -7,38 +7,136 @@
     <title>Pagina personal Cuzco Ramos Manuel</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/logoSistemas.ico">
     <link rel="stylesheet" href="styles/estilopersonal.css">
-    <link rel="stylesheet" href="styles/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="styles/bulma/bulma.css">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.css">
 </head>
 
 <body>
     <header>
-        <a href="/">
-            <h1>Mi sitio web</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="icon-home"> Inicio</a> &nbsp</li>
-                <li><a href="about.html" class="icon-clipboard"> Acerca de</a> &nbsp</li>
-                <li><a href="contact.html" class="icon-address-book">Cantáctame</a> &nbsp</li>
-                <li><a href="carta05.html" class="icon-file-text2">CARTA</a> &nbsp</li>
-            </ul>
+        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item fuente" href="index.html">Mi sitio web</a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item icon-home" href="index.html"> Inicio</a>
+                    <a class="navbar-item icon-clipboard" href="about.html">Acerca de</a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link fuente">Más</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item icon-file-text2 " href="carta05.html">Carta</a>
+                            <a class="navbar-item icon-address-book" href="contact.html">Contáctame</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="btn btn-success icon-file-text2" href="carta05.html">
+                            <strong>Carta</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <section id="presentacion">
-        <img src="images/perfil.jpg" alt="foto perfil" title="Cuzco Ramos Manuel" />
-        <h1>Hola, Mi nombre es Manuel</h1>
-        <h2>Soy estudiante de Ingenieria de Sistemas de la <abbr title="Universidad Nacional de Cajamarca">UNC</abbr></h2>
-    </section>
-    <Section id="bienvenida">
-        <h1>Bienvenidos a mi sitio web</h1>
-        <p>Aqui encontraras informacion de lo que me gusta hacer, lugares que he visitado así tambien de como contactarme <abbr title="etcétera">etc.</abbr></p>
+    <div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com/usuario" target="_blank" class="icon-facebook"></a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com/usuario" target="_blank" class="icon-twitter"></a>
+                </li>
+                <li>
+                    <a href="http://www.googleplus.com/usuario" target="_blank" class="icon-google-plus"></a>
+                </li>
+                <li>
+                    <a href="http://www.pinterest.com/usuario" target="_blank" class="icon-pinterest"></a>
+                </li>
+                <li>
+                    <a href="mailto:contacto@dominio.com" class="icon-envelop"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero is-primary has-text-centered">
+        <div class="hero-body">
+            <figure class="image is-128x128 figure">
+                <img class="is-rounded" src="images/perfil.jpg" alt="foto perfil" title="Cuzco Ramos Manuel" />
+            </figure>
 
+            <h1 class="title is-family-sans-serif">Hola, Mi nombre es Manuel</h1>
+            <h2 class="subtitle ">Soy estudiante de Ingenieria de Sistemas de la <abbr title="Universidad Nacional de Cajamarca">UNC</abbr></h2>
+        </div>
+
+    </div>
+
+    <Section class="column has-text-centered">
+        <h1 class="title">Bienvenidos a mi sitio web</h1> <br/>
+        <p class="bd-notification is-primary">Aqui encontraras informacion de lo que me gusta hacer, lugares que he visitado así tambien de como contactarme <abbr title="etcétera">etc.</abbr></p>
     </Section>
+    <div class="babout">
+        <section class="section">
+            <div class="box">
+                <h1 class="title has-text-left">Destacado</h1>
+            </div>
+            <hr>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <figure class="image is-2by1">
+                            <img class="d-block w-100 rounded" src="images/carrusel1.jpg" alt="First slide" title="compañeros">
+                        </figure>
 
-    <footer id="adr">
-        <div id="ad">
-            <address> Autor Cuzco Ramos Manuel (UNC) <br/>
-                <hr/><p>Ultima modificacion: 13 de septiembre del 2020</p>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="image is-2by1">
+                            <img class="d-block w-100 rounded" src="images/carrusel2.jpg" alt="Second slide" title="faculatadIngerieriaUNC">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure class="image is-2by1">
+                            <img class="d-block w-100 rounded" src="images/carrusel3.jpg" alt="Third slide" title="faculatadIngerieriaUNC">
+                        </figure>
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <footer class=" page-footer is-fixed-bottom has-background-white-ter">
+        <div class="content has-text-centered">
+            <address class="fuente"> Autor Cuzco Ramos Manuel (UNC) <br/>
+                <hr/><p class="fuente">Ultima modificacion: 27 de septiembre del 2020</p>
+                <div class="footer-copyright text-center py-3 fuente">© 2020 Copyright:
+                    <a href="https://github.com/1Manuelcuzco/1Manuelcuzco.github.io"> MiWebSite.com</a>
+                </div>
             </address>
         </div>
     </footer>

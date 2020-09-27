@@ -1,9 +1,11 @@
-* {}
-
 body {
     margin-left: 23%;
     margin-right: 24%;
     font-family: serif;
+}
+
+.fuente {
+    font-family: 'PT Sans', sans-serif;
 }
 
 #sp {

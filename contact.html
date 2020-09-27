@@ -10,88 +10,168 @@
     <script src='main.js'></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/logoSistemas.ico">
     <link rel="stylesheet" href="styles/estilopersonal.css">
-    <link rel="stylesheet" href="styles/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="styles/bulma/bulma.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header id="headerabout">
+<body class="is-family-sans-serif">
+    <header class="is-fixed-top">
+        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">Mi sitio web</a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-        <a href="/">
-            <h1>Mi sitio web</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="icon-home"> Inicio</a> &nbsp</li>
-                <li><a href="about.html" class="icon-clipboard"> Acerca de</a> &nbsp</li>
-                <li><a href="contact.html" class="icon-address-book">Cantáctame</a> &nbsp</li>
-                <li><a href="carta05.html" class="icon-file-text2">CARTA</a> &nbsp</li>
-            </ul>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item icon-home" href="index.html"> Inicio</a>
+                    <a class="navbar-item icon-clipboard " href="about.html">Acerca de</a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Más</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item icon-file-text2 " href="carta05.html">Carta</a>
+                            <a class="navbar-item icon-address-book" href="contact.html">Contáctame</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="btn btn-success icon-file-text2" href="carta05.html">
+                            <strong>Carta</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
         </nav>
-        <section>
-            <p><a href="index.html">Inicio</a>/ &nbsp Contáctame</p>
-            <br/>
-        </section>
-        <br/>
-        <hr/>
+        <div class="hero is-primary has-text-left">
+            <div class="hero-body">
+                <div class="navbar-item">
+                    <a class="navbar-item has-text-weight-bold" href="index.html">Inicio</a>
+                    <p class="has-text-left"></p>/ Contáctame</p>
+                </div>
+                <hr>
+            </div>
+
+        </div>
     </header>
-    <section>
-        <article id="ar">
-            <h1>Contacto</h1>
-            <form>
-                <div>
-                    <label for="direccion">Tartar chico-Baños del Inca</label>
-                </div>
-                <div>
-                    <label for="email">mcuzcor15_2@unc.edu.pe</label>
-                </div>
-                <div>
-                    <label for="celular">940371162</label>
-                </div>
-            </form>
-        </article>
+    <div class="babout">
+        <section class="columns">
+            <article class="column">
+                <h2 class="subtitle">Contacto</h2>
+                <form class="box">
+                    <div class="field">
+                        <div class="control">
+                            <label class="box has-text-left icon-location2" for="direccion"> Tartar chico-Baños del Inca</label>
+                        </div>
 
-        <article>
-            <h3>Envíanos tus sugerencias por e‐mail</h3>
-            <form action="MAILTO:mipaginaweb@unc.edu.com" method="post" enctype="text/plain">
-                <div id="sug">
-                    <div class="esc">
-                        <input type="text" id="fname" name="firstname" placeholder="Nombres..">
                     </div>
-                </div>
-                <div id="sug">
-                    <div class="esc">
-                        <input type="text" id="lname" name="lastname" placeholder="Apellidos..">
+                    <div class="field">
+                        <div class="control">
+                            <label class="box has-text-left icon-envelop" for="email"> mcuzcor15_2@unc.edu.pe</label>
+                        </div>
+
                     </div>
-                </div>
-                <div id="sug">
-                    <div class="esc">
-                        <textarea id="subject" name="subject" placeholder="Escriba sugerencia.." style="height:200px"></textarea>
+                    <div class="field">
+                        <div class="control has-icons-left ">
+                            <label class="box has-text-left icon-home" for="celular"> 940371162</label>
+                        </div>
+
                     </div>
-                </div>
-                <div id="boton">
-                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+
+            <article class="column block">
+                <div>
+                    <h2 class="subtitle">Envíanos tus sugerencias por e‐mail</h2>
                 </div>
 
-            </form>
-        </article>
-    </section>
-    <footer id="adr">
-        <div>
-            <a href="https://web.facebook.com/cuzco.ramos">
-                <img src="images/iconface.png" alt="facebook" title="Cuzco Ramos" />
-            </a>
+                <form action="MAILTO:mipaginaweb@unc.edu.com" method="post" enctype="text/plain" class="box">
+                    <div class="field">
+                        <label class="label has-text-left">Nombre</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Nombres..">
+                            <span class="icon is-small is-left icon-user">
+                                <i class="fas fa-envelope"></i></span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-left">Apellido</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Apellidos..">
+                            <span class="icon is-small is-left icon-user">
+                            <i class="fas fa-envelope"></i></span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-left">Email</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="email" placeholder="Email input" value="hello@">
+                            <span class="icon is-small is-left icon-envelop">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <textarea class="textarea is-primary" placeholder="Escriba sugerencia"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </div>
+    <div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com/usuario" target="_blank" class="icon-facebook"></a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com/usuario" target="_blank" class="icon-twitter"></a>
+                </li>
+                <li>
+                    <a href="http://www.googleplus.com/usuario" target="_blank" class="icon-google-plus"></a>
+                </li>
+                <li>
+                    <a href="http://www.pinterest.com/usuario" target="_blank" class="icon-pinterest"></a>
+                </li>
+                <li>
+                    <a href="mailto:contacto@dominio.com" class="icon-envelop"></a>
+                </li>
+            </ul>
         </div>
-        <div>
-            <a href="https://www.instagram.com/cuzco_ramos/?hl=es-la" target="_blanck">
-                <img src="images/iconinst.png" alt="instagram" title="Cuzco Ramos" />
-            </a>
-        </div>
-        <div id="ad">
-            <address> Autor Cuzco Ramos Manuel (UNC) <br/>
-                <hr/><p>Ultima modificacion: 13 de septiembre del 2020</p>
+    </div>
+
+    <footer class=" page-footer is-fixed-bottom has-background-white-ter">
+        <div class="content has-text-centered">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15834.792784092979!2d-78.46669509263477!3d-7.160847477503726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25afd3fc7d087%3A0xea80a2b94d876b2b!2sCajamarca!5e0!3m2!1ses!2spe!4v1601173025824!5m2!1ses!2spe"
+                width="1400" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <address class="fuente"> Autor Cuzco Ramos Manuel (UNC) <br/>
+                <hr/><p class="fuente">Ultima modificacion: 27 de septiembre del 2020</p>
+                <div class="footer-copyright text-center py-3 fuente">© 2020 Copyright:
+                    <a href="https://github.com/1Manuelcuzco/1Manuelcuzco.github.io"> MiWebSite.com</a>
+                </div>
             </address>
         </div>
     </footer>
+
 </body>
 
 </html>
