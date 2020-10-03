@@ -1,0 +1,99 @@
+body {
+    width: 950px;
+    margin: auto;
+    background: rgb(169, 215, 243);
+}
+
+nav {
+    float: left;
+}
+
+.seccion {
+    background: rgb(169, 215, 243);
+}
+
+header {
+    text-align: center;
+}
+
+.pri {
+    width: 100%;
+    padding-top: 5%;
+    float: left;
+}
+
+.datos {
+    width: 50%;
+    float: left;
+}
+
+.datosiz {
+    width: 46%;
+    float: right;
+}
+
+.datos2 {
+    width: 50%;
+    float: left;
+}
+
+.label1 {
+    width: 51%;
+    display: table;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(42, 42, 252);
+    color: white;
+    float: left;
+}
+
+.label2 {
+    width: 49%;
+    padding: 12px;
+    text-size-adjust: initial;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-color: rgb(173, 37, 37);
+    float: right;
+}
+
+.input1 {
+    width: 49%;
+    padding: 12px;
+    border-color: rgb(173, 37, 37);
+    box-sizing: border-box;
+    float: right;
+}
+
+button {
+    padding: 12px 60px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(150, 92, 33);
+    float: left;
+}
+
+.bott {
+    padding: 12px 60px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(236, 167, 97);
+    float: left;
+}
+
+.lab {
+    width: 51%;
+    display: table;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(150, 92, 33);
+    float: left;
+}
