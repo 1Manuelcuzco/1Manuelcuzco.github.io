@@ -1,6 +1,36 @@
 function pageLoad() {
     let extraer = document.getElementById("extraer");
     extraer.onclick = exClick;
+    let colorear = document.getElementById("colorear");
+    colorear.onclick = colorClick;
+}
+let flag = 1;
+
+function colorClick() {
+    let botoncolor = document.getElementsByClassName("cambiocolor");
+    let botoncolor2 = document.getElementsByClassName("cambiocolor2")
+    let i;
+
+    if (flag) {
+        for (i = 0; i < botoncolor.length; i++) {
+            document.getElementById("colorear").style.backgroundColor = "blue";
+            botoncolor[i].style.backgroundColor = "#6E2C00";
+            for (j = 0; j < botoncolor2.length; j++) {
+                botoncolor2[j].style.backgroundColor = "blue";
+            }
+        }
+        flag = 0;
+    } else {
+        for (i = 0; i < botoncolor.length; i++) {
+            document.getElementById("colorear").style.backgroundColor = "#6E2C00";
+            botoncolor[i].style.backgroundColor = "blue";
+            for (j = 0; j < botoncolor2.length; j++) {
+                botoncolor2[j].style.backgroundColor = "#6E2C00";
+            }
+        }
+        flag = 1;
+    }
+
 }
 
 function exClick() {

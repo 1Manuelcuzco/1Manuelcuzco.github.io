@@ -43,7 +43,7 @@ header {
     padding: 12px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    background-color: rgb(42, 42, 252);
+    background-color: blue;
     color: white;
     float: left;
 }
@@ -55,7 +55,7 @@ header {
     background-color: white;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    border-color: rgb(173, 37, 37);
+    border-color: #6E2C00;
     float: right;
 }
 
