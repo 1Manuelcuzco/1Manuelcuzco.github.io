@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/cuzco.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bod">
     <br>
     <hr>
     <section>
         <div class="inicio">
             <h3>Desde <span class="span1">Sectores y empresas</span></h3>
-            <button class="btn1">Inmobiliario</button>
-            <img class="vineta" src="images/im.png">
+            <div>
+                <button class="btn1">Inmobiliario</button>
+                <button id="vin" class="bvin"><img  class="vineta" src="images/im.png"></button>
+            </div>
         </div>
         <div class="imagen">
             <figure class="figura">
@@ -27,15 +30,19 @@
             <p>El segmento da sus primeras señales de recuperacion, aunque el valor del metro cuadrado en Lima Top seguiria bajo por algunos meses mas</p>
             <br>
             <div class="tiempo">
-                <p class="mensaje">Lectura de 3 min</p>
+                <p id="mensaje">Lectura de 3 min</p>
+
             </div>
         </div>
     </section>
     <section>
         <div class="inicio">
             <h3>Desde <span class="span2">Management</span></h3>
-            <button id="fecha" class="btn2">Talento y cultura</button>
-            <img class="vineta" src="images/im.png">
+            <div>
+                <button id="fecha" class="btn2">Talento y cultura</button>
+                <br>
+                <button id="vin1" class="bvin"><img  class="vineta" src="images/im.png"></button>
+            </div>
         </div>
         <div class="imagen">
             <figure class="figura">
@@ -51,7 +58,7 @@
             <br>
             <br>
             <div class="tiempo">
-                <p>Lectura de 2 min</p>
+                <p id="mensaje1">Lectura de 2 min</p>
                 <label id="horaactual"></label>
             </div>
         </div>
@@ -60,7 +67,8 @@
         <div class="inicio">
             <h3>Desde <span class="span3">Legal y Politica</span></h3>
             <button class="btn3">Politica</button>
-            <img class="vineta" src="images/im.png">
+            <br>
+            <button id="vin2" class="bvin"><img  class="vineta" src="images/im.png"></button>
         </div>
         <div class="imagen">
             <figure class="figura">
@@ -72,32 +80,79 @@
             <p>LA VOZ DE SE. Las agendas politicas a nivel regional y parlamentario comprometen la recuperacion economica. El gobierno dee agotar todo esfuerzo para neutralizarlas.</p>
             <br>
             <div class="tiempo">
-                <p>Lectura de 3 min</p>
+                <p id="mensaje2">Lectura de 3 min</p>
             </div>
         </div>
     </section>
     <section>
         <div class="inicio">
             <h3>Desde <span class="span4">Sectores y empresas</span></h3>
-            <button class="btn4">Turismo</button>
-            <img class="vineta" src="images/im.png">
+
+            <button id="mosimg" class="btn4">Turismo</button>
+            <button id="vin3" class="bvin"><img  class="vineta" src="images/im.png"></button>
         </div>
         <div class="imagen">
-            <figure class="figura">
+            <figure id="ocul" class="figura">
                 <img src="images/turismo.jpg" alt="Placeholder image">
             </figure>
+            <div id="carrusel" style="display: none;">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="image is-2by1">
+                                <img class="d-block w-100 rounded" src="images/i1.jpg" alt="First slide">
+                            </figure>
+
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="image is-2by1">
+                                <img class="d-block w-100 rounded" src="images/i2.png" alt="Second slide">
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="image is-2by1">
+                                <img class="d-block w-100 rounded" src="images/i3.png" alt="Third slide">
+                            </figure>
+
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="image is-2by1">
+                                <img class="d-block w-100 rounded" src="images/i4.jpg" alt="for slide">
+                            </figure>
+
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="image is-2by1">
+                                <img class="d-block w-100 rounded" src="images/i5.jpg" alt="five slide">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
         <div>
             <h4>Reapertura de fronteras: hoy inicia la reactivacion del circuito turistico regional</h4>
             <p>El regreso de los vuelos internacionales, desde el 5 de octubre, es el comienzo de la transicion de la reactivacion turistica interna a la regional. Sin embargo algunos factores pueden retr...</p>
             <br>
             <div class="tiempo">
-                <p>Lectura de 5 min</p>
+                <p id="mensaje3">Lectura de 5 min</p>
 
             </div>
         </div>
     </section>
     <script src="scripts/cuzco.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>

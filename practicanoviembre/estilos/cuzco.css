@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-body {
+.bod {
     width: 90%;
     margin: auto;
     font-family: sans-serif;
@@ -13,6 +13,13 @@ body {
     width: 40px;
     float: right;
     padding-right: 15%;
+}
+
+.bvin {
+    float: right;
+    margin-right: 20%;
+    background-color: white;
+    border-color: white;
 }
 
 hr {
