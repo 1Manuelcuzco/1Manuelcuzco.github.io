@@ -6,10 +6,28 @@
 body {
     width: 90%;
     margin: auto;
+    font-family: sans-serif;
+}
+
+.vineta {
+    width: 40px;
+    float: right;
+    padding-right: 15%;
+}
+
+hr {
+    color: brown;
 }
 
 .inicio {
     padding-bottom: 3%;
+}
+
+.tiempo p {
+    text-align: right;
+    padding-right: 15%;
+    color: rgb(8, 4, 4);
+    position: relative;
 }
 
 .inicio h3 {
@@ -46,6 +64,17 @@ body {
 
 .span3 {
     color: darkorchid;
+}
+
+h4 {
+    padding-top: 4%;
+}
+
+p {
+    padding-top: 4%;
+    padding-right: 15%;
+    text-align: justify;
+    color: rgb(200, 207, 200);
 }
 
 section {
